@@ -3,12 +3,12 @@ var katzDeliLine = []
 function takeANumber (katzDeliLine, newPerson){
   katzDeliLine.push(newPerson)
   var place = katzDeliLine.length + 1
-  return "Welcome, $[newPerson]. You are number ${place} in line."
+  return `Welcome, ${newPerson}. You are number ${place} in line.`
 }
 function nowServing (katzDeliLine){
   var person = katzDeliLine[0]
   katzDeliLine.shift()
-  return "Currently serving ${person}."
+  return `Currently serving ${person}.`
 }
 
 function currentLine(katzDeliLine){
@@ -18,7 +18,7 @@ function currentLine(katzDeliLine){
   while (num < katzDeliLine.length){
     person = katzDeliLine[num]
     num++
-    list = list + " ${num}. ${person},"
+    list = list + ` ${num}. ${person},`
   }
-  return "The line is currently ${list}"
+  return `The line is currently ${list}`
 }
