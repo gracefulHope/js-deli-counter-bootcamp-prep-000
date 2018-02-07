@@ -25,7 +25,7 @@ function currentLine(katzDeliLine){
   while (num < katzDeliLine.length){
     person = katzDeliLine[num]
     num++
-    list = list + ` ${num}. ${person},`
+    list = list + ` ${num}. ${person}`
   }
   return list
   }
