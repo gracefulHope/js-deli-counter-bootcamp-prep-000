@@ -1,9 +1,10 @@
-var katzDeliLine = []
+var katzDeli = []
 
-function takeANumber (katzDeliLine, newPerson){
-  katzDeliLine.push(newPerson)
-  return katzDeliLine.length + 1
+function takeANumber (katzDeli, newPerson){
+  katzDeli.push(newPerson)
+  var place = katzDeliLine.length + 1
+  return "Welcome, ${newPerson}. You are number ${place} in line."
 }
-function nowServing (){
-  
+function nowServing (katzDeli){
+  return "Currently serving ${person}."
 }
