@@ -1,17 +1,17 @@
-var katzDeli = []
+var katzDeliLine = []
 
-function takeANumber (katzDeli, newPerson){
+function takeANumber (katzDeliLine, newPerson){
   katzDeli.push(newPerson)
   var place = katzDeliLine.length + 1
   return "Welcome, ${newPerson}. You are number ${place} in line."
 }
-function nowServing (katzDeli){
+function nowServing (katzDeliLine){
   var person = katzDeli[0]
   katzDeli.shift()
   return "Currently serving ${person}."
 }
 
-function currentLine(katzDeli){
+function currentLine(katzDeliLine){
   var list
   var num = 0
   var person
