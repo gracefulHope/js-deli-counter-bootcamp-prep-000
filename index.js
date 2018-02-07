@@ -6,5 +6,7 @@ function takeANumber (katzDeli, newPerson){
   return "Welcome, ${newPerson}. You are number ${place} in line."
 }
 function nowServing (katzDeli){
+  var person = katzDeli[0]
+  katzDeli
   return "Currently serving ${person}."
 }
