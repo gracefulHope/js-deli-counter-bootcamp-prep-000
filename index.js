@@ -10,3 +10,15 @@ function nowServing (katzDeli){
   katzDeli.shift()
   return "Currently serving ${person}."
 }
+
+function currentLine(katzDeli){
+  var list
+  var num = 0
+  var person
+  while (num < katzDeli.length){
+    person = katzDeli[num]
+    num++
+    list = list + " ${num}. ${person},"
+  }
+  return "The line is currently ${list}"
+}
