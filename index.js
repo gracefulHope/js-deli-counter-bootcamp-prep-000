@@ -7,6 +7,6 @@ function takeANumber (katzDeli, newPerson){
 }
 function nowServing (katzDeli){
   var person = katzDeli[0]
-  katzDeli
+  katzDeli.shift()
   return "Currently serving ${person}."
 }
