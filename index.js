@@ -12,6 +12,9 @@ function nowServing (katzDeliLine){
 }
 
 function currentLine(katzDeliLine){
+  if (katzDeliLine.length === 0){
+    return "The line is currently empty."
+  } else {
   var list
   var num = 0
   var person
@@ -21,4 +24,5 @@ function currentLine(katzDeliLine){
     list = list + ` ${num}. ${person},`
   }
   return `The line is currently ${list}`
+  }
 }
